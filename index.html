@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Game</title>
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-7 centerbox">
+
+                <div class="jumbotron">
+                    <h1 class="display-4">Car Trivia for Automotive Enthusiast</h1>
+                    <div class="inserthere"></div>
+                    <a class="btn btn-primary btn-lg startbutton" href="#" role="button">Start Game</a>
+                </div>
+
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+
+    </div>
+    <!--before i start writing jquery code on the js file i wanted to try to get it all to work from the index file.
+    -->
+
+    <script>
+
+        // first i set up a click listener for the start button that i will have connected to the timer
+        
+$(".startbutton").click(function fill() {
+    
+    $(".inserthere").html("Hello World");
+    //i used the remove () method to get rid of the button when the game begins i will also have a time start and the questions apper.
+        $(".startbutton").remove()
+})
+
+// i will have an array hold answers and an array hold the correct answers
+
+
+var questionsnanswers={
+    "Who designed what was considered the world’s first car?": 
+    "What famous auto maker is responsible for designing the Volkswagen Beetle?",
+    "What make and model is the General Lee?",
+    "How did the Ford Mustang get it’s name?",
+    "Which car is considered to be the first “muscle",
+    "What is the worlds largest automotive company? ",
+    "What company opened up the first drive-in gas station?",
+    "When and where was the first drive-in theater built?",
+    "What US Production car is the fastest from 0-60 mph?",
+    " What is the name of the caped lady on top of the Rolls Royce radiators?",
+    "In what year did Auto Insurance become available to drivers?",
+    "Harley Earl introduces what feature to the Chevy Cadillac in 1948",
+    "Why was a national speed limit of 55 mph enacted in 1974?",
+    'When did Chrysler first officially use the "Hemi" name?',
+    "What was the first Japanese car to be produced in the United States?",
+}
+
+
+    </script>
+</body>
+
+</html>
